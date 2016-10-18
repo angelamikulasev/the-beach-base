@@ -1,7 +1,3 @@
----
-layout: default
----
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,6 +11,7 @@ layout: default
     <!-- css class -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/css.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- animate -->
@@ -41,14 +38,11 @@ layout: default
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
             </button>
-            <a class="navbar-brand" href="#" >
-                <img alt="Brand" src="images/logo.png">
-            </a>
             <p class="navbar-text" data-sr='wait 2s, then enter top and hustle 40px over 1.5s'></p>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right nav nav-pills">
-                <li class="active"><a class="page-scroll" href="#start">START</a></li>
+                <li class="active"><a class="page-scroll" href="#start">HOME</a></li>
                 <li><a class="page-scroll" href="#about">ABOUT US</a></li>
                 <li><a class="page-scroll" href="#contact">CONTACT</a></li>
             </ul>
@@ -62,13 +56,20 @@ layout: default
     <div class="jumbotron jumbo img-responsive">
         <div class="container" >
             <div class="title">
-                <h2 data-sr='wait 1s, then enter left and hustle 100px over 0.4s'>W </h2>
-                <h2 data-sr='wait 1.4s, then enter left and hustle 40px over 0.4s'>E </h2>
-                <h2 data-sr='wait 1.8s, then enter left and hustle 40px over 0.4s'>L </h2>
-                <h2 data-sr='wait 2.2s, then enter left and hustle 40px over 0.4s'>C </h2>
-                <h2 data-sr='wait 2.6s, then enter left and hustle 40px over 0.4s'>O </h2>
-                <h2 data-sr='wait 3s, then enter left and hustle 40px over 0.4s'>M </h2>
-                <h2 data-sr='wait 3.4s, then enter left and hustle 40px over 0.4s'>E </h2>
+                <h2 data-sr='wait 1s, then enter left and hustle 100px over 0.4s'>T </h2>
+                <h2 data-sr='wait 1.4s, then enter left and hustle 40px over 0.4s'>H </h2>
+                <h2 data-sr='wait 1.8s, then enter left and hustle 40px over 0.4s'>E </h2>
+
+                <h2 data-sr='wait 2.2s, then enter left and hustle 40px over 0.4s'>B </h2>
+                <h2 data-sr='wait 2.6s, then enter left and hustle 40px over 0.4s'>E </h2>
+                <h2 data-sr='wait 3s, then enter left and hustle 40px over 0.4s'>A </h2>
+                <h2 data-sr='wait 3.4s, then enter left and hustle 40px over 0.4s'>C </h2>
+                <h2 data-sr='wait 3.8s, then enter left and hustle 40px over 0.4s'>H </h2>
+                <br>
+                <h2 data-sr='wait 4.2s, then enter left and hustle 40px over 0.4s'>B </h2>
+                <h2 data-sr='wait 4.6s, then enter left and hustle 40px over 0.4s'>A </h2>
+                <h2 data-sr='wait 5.2s, then enter left and hustle 40px over 0.4s'>S </h2>
+                <h2 data-sr='wait 5.6s, then enter left and hustle 40px over 0.4s'>E </h2>
             </div>
             <p data-sr='wait 3.6s, then enter bottom and hustle 50px over 2s'>
                 Seaside, performance and design.
@@ -77,6 +78,22 @@ layout: default
 </div>
 </section>
 <!--[jumotron end]-->
+
+<!--[Subscribe]-->
+<div id="subscribe">
+    <div class="container-fluid">
+        <div class="row subs">
+            <div class="col-md-6 col-md-offset-3">
+                <h2>Newsletter</h2>
+                <div class="testimonial-border"></div>
+                <input type="email" class="form-control" id="email" placeholder="enter your email">
+                <button type="submit" class="buttonSubscribe">_Subscribe</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--[Subscribe-end]-->
+
 <!--[About Us]-->
 <div class="container-fluid">
     <section id="about">
@@ -97,7 +114,7 @@ layout: default
                 </div>
             </div>
             <div class="col-md-6 counters" data-sr='wait 0.1s, then enter right and hustle 125px over 1.5s'>
-                <h2 >STAY TUNED</h2>
+                <h2>STAY TUNED</h2>
                 <div class="testimonial-border"></div>
                 <h3 >Our website is almost ready. We are coming in:</h3>
                 <ul id="example" >
@@ -118,64 +135,35 @@ layout: default
 <!--[contact]-->
 <div class="container-fluid contact-background">
     <div id="contact">
-    <div class="col-md-12 contact-us" data-sr='wait 0.1s, then enter top and hustle 20px over 1s'>
+    <div class="col-md-6 col-md-offset-3 contact-us" data-sr='wait 0.1s, then enter top and hustle 20px over 1s'>
         <h2>Contact Us</h2>
         <div class="testimonial-border"></div>
     </div>
     </div>
     <div class="row contact">
-            <div class="col-md-5 col-md-offset-2" data-sr='wait 0.2s, then enter left and hustle 50px over 1s'>
-                <div class="form-group">
-                    <div class="input-group">
-                        <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Name" required>
-                        <span class="input-group-addon"><i></i></span></div>
-                </div>
-                <div class="form-group">
-                    <div class="input-group">
-                        <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Email" required  >
-                        <span class="input-group-addon"><i></i></span></div>
-                </div>
-                <div class="form-group">
-                    <div class="input-group">
-                        <textarea name="InputMessage" id="InputMessage" class="form-control" rows="10" placeholder="Message" required></textarea>
-                        <span class="input-group-addon"><i></i></span></div>
-                </div>
-                <div class="form-group">
-                </div>
-                <button type="submit" name="submit" id="buttonContact" class="btn contact-btn pull-right" data-anijs="if: mouseover, do: pulse animated">_Send Message</button>
+        <div class="col-md-6 col-md-offset-3 " data-sr='wait 0.2s, then enter left and hustle 50px over 1s'>
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Name" required>
+                    <span class="input-group-addon"><i></i></span></div>
             </div>
-        <hr class="featurette-divider hidden-lg">
-        <div class="col-md-3 col-md-push-1" data-sr='wait 0.2s, then ease in out and hustle 20px over 1s'>
-            <h2 class="h2-contact">Company Name</h2>
-            <address>
-                <p class="lead">
-                    75 London District<br/>
-                    Amazing Street 10/555<br/>
-                    <br/>
-                    Phone: 555-123-458<br/>
-                    Fax: 555-321-582<br/>
-                    email@youradress.com<br/>
-                </p>
-            </address>
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Email" required  >
+                    <span class="input-group-addon"><i></i></span></div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <textarea name="InputMessage" id="InputMessage" class="form-control" rows="10" placeholder="Message" required></textarea>
+                    <span class="input-group-addon"><i></i></span></div>
+            </div>
+            <div class="form-group">
+            </div>
+            <button type="submit" name="submit" id="buttonContact" class="btn contact-btn pull-right" data-anijs="if: mouseover, do: pulse animated">_Send Message</button>
         </div>
     </div>
 </div>
 <!--[contact-end]-->
-
-<!--[Subscribe]-->
-<div id="subscribe">
-    <div class="container-fluid">
-        <div class="row subs">
-            <div class="col-md-6 col-md-offset-3">
-                <h2>Newsletter</h2>
-                <div class="testimonial-border"></div>
-                <input type="email" class="form-control" id="email" placeholder="enter your email">
-                <button type="submit" class="buttonSubscribe">_Subscribe</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!--[Subscribe-end]-->
 
 <!--[footer]-->
 <div class="container-fluid footer">
@@ -184,18 +172,18 @@ layout: default
             <div class="social-icon">
                 <ul class="social-icon">
                     <li class="icon">
-                        <a href="#" target="_blank" id="footerPinterest"></a>
+                        <a href="https://au.pinterest.com/thebeachbase/" target="_blank" id="footerPinterest"></a>
                     </li>
                     <li class="icon">
                         <a href="#" target="_blank" id="footerFacebook"></a>
                     </li>
                     <li class="icon">
-                        <a href="#" target="_blank" id="footerTwitter"></a>
+                        <a href="#" target="_blank" id="footerInstagram"></a>
                     </li>
                 </ul>
             </div>
             <div id="footer-text">
-                <h4>© Seaside. Only on Themeforest</h4>
+                <h4>© The Beach Base.</h4>
             </div>
         </div>
     </div>
